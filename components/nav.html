@@ -1,0 +1,52 @@
+<div class="page-1_header-wrapper">
+  <div class="header-wrapper">
+    <div class="container menu">
+      <a ng-if="isMobile" ng-click="menu.active=!menu.active" style="float:right;"><i style="line-height:76px; margin:0 20px" class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
+      <div class="logo_wrapper__1"><div class="logo_wrapper__2"><h1><a href="index.html"><img style="width:80px" src="img/logo.png" alt="Brand Logo"></a></h1></div></div>
+      <ul class="sf-menu" ng-class="{'active':menu.active}">
+        <li ng-class="{'current':route=='home'}">
+          <div class="sf-menu_effect_wrapper">
+            <div class="sf-menu_effect"></div>
+          </div>
+          <a href="#">主頁</a>
+        </li>
+        <li ng-class="{'current':route=='about'}">
+          <div class="sf-menu_effect_wrapper">
+            <div class="sf-menu_effect"></div>
+          </div>
+          <a href="#!/about">關於我們</a>
+        </li>
+        <!-- <li ng-class="{'current':route=='news'}">
+          <div class="sf-menu_effect_wrapper">
+            <div class="sf-menu_effect"></div>
+          </div>
+          <a href="index-2.html">最新消息</a>
+        </li> -->
+        <li ng-class="{'current':route=='curriculum'}">
+          <div class="sf-menu_effect_wrapper">
+            <div class="sf-menu_effect"></div>
+          </div>
+          <a href="#!/curriculum">課程簡介</a>
+        </li>
+        <li ng-class="{'current':route=='schedule'}">
+          <div class="sf-menu_effect_wrapper">
+            <div class="sf-menu_effect"></div>
+          </div>
+          <a href="#!/schedule">課堂時間</a>
+        </li>
+        <li ng-class="{'current':route=='photos'}">
+          <div class="sf-menu_effect_wrapper">
+            <div class="sf-menu_effect"></div>
+          </div>
+          <a href="#!/photos">活動相片</a>
+        </li>
+        <li ng-class="{'current':route=='contact'}">
+          <div class="sf-menu_effect_wrapper">
+            <div class="sf-menu_effect"></div>
+          </div>
+          <a href="#!/contact">聯絡我們</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
